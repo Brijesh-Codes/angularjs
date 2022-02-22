@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .navbar {
+            height: 50px;
+            background-color: cadetblue;
+        }
+        
+        .navbar h1 {
+            float: left;
+        }
+        
+        li a {
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        ul {
+            float: right;
+        }
+        
+        ul li {
+            float: left;
+            width: 91px;
+            list-style-type: none;
+        }
+        
+        @media screen and (max-width:800px) {
+            ul li {
+                float: none;
+            }
+            ul {
+                float: none;
+            }
+        }
+        
+        .skill {
+            text-align: center;
+            width: 100%;
+        }
+        
+        h1 {
+            margin-top: 344px;
+            transition: .5s;
+        }
+        
+        h1:hover {
+            box-shadow: 0px 0px 5px 2px black;
+            background-color: darkseagreen;
+            color: white;
+        }
+        
+        .box1 {
+            float: left;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: .5s;
+        }
+        
+        .box1:hover {
+            box-shadow: 0px 0px 5px 2px black;
+            background-color: cadetblue;
+            color: white;
+        }
+        
+        .mainbox {
+            height: 300px;
+            width: 100%;
+            margin: auto;
+            float: left;
+            box-sizing: border-box;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        i {
+            font-size: 60px;
+        }
+        
+        .mainbox :hover h2 {
+            color: white;
+        }
+        
+        @media screen and (max-width:400px) {
+            .mainbox,
+            .imgbox,
+            p,
+            .box1,
+            img {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (min-width:800px) {
+            .mainbox,
+            .imgbox,
+            p,
+            img {
+                width: 100%;
+            }
+        }
+        
+        img {
+            width: 100%;
+            height: 600px;
+            margin-top: -3px;
+        }
+        
+        p {
+            font-size: 50px;
+            color: blanchedalmond;
+            text-align: center;
+            margin-top: -381px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="navbar" style="background-color: {{color}} ">
+
+        <ul>
+            <li><a href="#" style="color: {{color1}};">HOME</a></li>
+            <li><a href="#" style="color: {{color1}};">MENU</a></li>
+            <li><a href="#" style="color: {{color1}};">SETTING</a></li>
+            <li><a href="#" style="color: {{color1}};">EDIT</a></li>
+            <li><a href="#" style="color: {{color1}};">VIEW</a></li>
+        </ul>
+
+
+        <input type="color" ng-model="color">
+        <input type="color" ng-model="color1">
+    </div>
+    <div class="imgbox" style="color: {{color1}};">
+
+        <img src="img/c7e65b43-9423-421e-89d0-9f8d11f0853d.jpg" alt="">
+        <p style="color: {{color1}};">The One Wab Technology </p>
+
+    </div>
+    <div class="skill" style="color: {{color1}};">
+        <h1>SKILL</h1>
+        <hr>
+    </div>
+    <div class="mainbox" style="color: {{color1}};">
+        <div class="box1">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex mollitia ut totam dolor dolore! Animi optio aliquid ipsa maxime, placeat iste molestias eos iure similique necessitatibus modi eveniet a!
+        </div>
+
+        <div class="box1" style="color: {{color1}};">
+            <i class="fa-brands fa-java"></i>
+            <h2>JAVA</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione molestiae exercitationem, dolorum iure minima nulla neque in labore pariatur officia? Magni quae ex illum rerum labore quibusdam voluptas praesentium repellendus!
+        </div>
+        <div class="box1" style="color: {{color1}};">
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, beatae error sunt voluptatibus eius eveniet quod nisi asperiores distinctio, quidem, tempore quibusdam delectus sequi aperiam eum veniam? Neque, ex doloremque.
+        </div>
+        <div class="box1" style="color: {{color1}};">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>C++</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil, debitis tempora atque fuga pariatur facilis molestias laborum. Possimus fuga atque voluptatibus assumenda ducimus quos, facere ipsam eaque vero voluptates.
+        </div>
+        <script src="angular.js"></script>
+    </div>
+
+</body>
+
+</html>
